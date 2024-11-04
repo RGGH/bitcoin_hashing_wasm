@@ -4,14 +4,14 @@ use sha2::{Sha256, Digest};
 use ripemd::Ripemd160;
 use wasm_bindgen::prelude::*;
 
-#[wasm_bindgen]
+
 pub fn sha256(input: &[u8]) -> Vec<u8> {
     let mut hasher = Sha256::new();
     hasher.update(input);
     hasher.finalize().to_vec()
 }
 
-#[wasm_bindgen]
+
 pub fn ripemd160(input: &[u8]) -> Vec<u8> {
     let mut hasher = Ripemd160::new();
     hasher.update(input);
