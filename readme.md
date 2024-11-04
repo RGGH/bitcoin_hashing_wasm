@@ -11,7 +11,6 @@ This will give you :
 [Visit the Bitcoin Wiki](https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses)
 
 This is a demo, it uses Legacy Bitcoin addresses, which start with a 1 for P2PKH (Pay-to-Public-Key-Hash) addresses.
-Address Formats in Bitcoin
 
     Legacy Addresses (Base58Check):
         Format: Starts with 1.
