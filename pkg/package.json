@@ -1,0 +1,15 @@
+{
+  "name": "bitcoin_hashing_wasm",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "bitcoin_hashing_wasm_bg.wasm",
+    "bitcoin_hashing_wasm.js",
+    "bitcoin_hashing_wasm.d.ts"
+  ],
+  "main": "bitcoin_hashing_wasm.js",
+  "types": "bitcoin_hashing_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
