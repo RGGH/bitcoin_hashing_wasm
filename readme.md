@@ -27,3 +27,5 @@ This code generates a legacy Bitcoin address from a given public key in hexadeci
 5. **Checksum Calculation**: Computes the SHA-256 hash of the versioned hash, then performs SHA-256 again to derive a checksum.
 6. **Checksum Append**: Appends the first four bytes of the checksum to the versioned hash.
 7. **Base58 Encoding**: Converts the final byte array into a Base58 string, resulting in the Bitcoin address.
+
+   [try it out](https://rggh.github.io/bitcoin_hashing_wasm/web/)
