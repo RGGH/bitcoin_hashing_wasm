@@ -1,5 +1,5 @@
+[![Rust](https://github.com/RGGH/bitcoin_hashing_wasm/actions/workflows/rust.yml/badge.svg)](https://github.com/RGGH/bitcoin_hashing_wasm/actions/workflows/rust.yml)
 # ⚡ Base58 address from Public Key 🔑
-
 ---
 ### example key to enter: 
 
