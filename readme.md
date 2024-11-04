@@ -29,3 +29,6 @@ This code generates a legacy Bitcoin address from a given public key in hexadeci
 7. **Base58 Encoding**: Converts the final byte array into a Base58 string, resulting in the Bitcoin address.
 
    [try it out](https://rggh.github.io/bitcoin_hashing_wasm/web/)
+
+   ![image](https://github.com/user-attachments/assets/560aed1d-fd47-4996-b579-e6f7b8a773c0)
+
