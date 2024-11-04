@@ -1,16 +1,6 @@
 /* tslint:disable */
 /* eslint-disable */
 /**
- * @param {Uint8Array} input
- * @returns {Uint8Array}
- */
-export function sha256(input: Uint8Array): Uint8Array;
-/**
- * @param {Uint8Array} input
- * @returns {Uint8Array}
- */
-export function ripemd160(input: Uint8Array): Uint8Array;
-/**
  * @param {string} public_key_hex
  * @returns {string}
  */
@@ -20,13 +10,11 @@ export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembl
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
-  readonly sha256: (a: number, b: number, c: number) => void;
-  readonly ripemd160: (a: number, b: number, c: number) => void;
   readonly generate_bitcoin_address: (a: number, b: number, c: number) => void;
   readonly __wbindgen_add_to_stack_pointer: (a: number) => number;
   readonly __wbindgen_malloc: (a: number, b: number) => number;
-  readonly __wbindgen_free: (a: number, b: number, c: number) => void;
   readonly __wbindgen_realloc: (a: number, b: number, c: number, d: number) => number;
+  readonly __wbindgen_free: (a: number, b: number, c: number) => void;
 }
 
 export type SyncInitInput = BufferSource | WebAssembly.Module;

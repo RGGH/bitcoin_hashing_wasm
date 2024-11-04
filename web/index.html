@@ -9,13 +9,26 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1>Bitcoin Address Generator</h1>
+        <h1>Legacy Bitcoin Address Generator</h1>
         <div class="mb-3">
             <label for="input" class="form-label">Public Key (Hex):</label>
             <input type="text" class="form-control" id="input" placeholder="Enter public key in hex">
         </div>
         <button class="btn btn-primary" onclick="generateBitcoinAddress()">Generate Bitcoin Address</button>
-        <pre id="output" class="mt-3"></pre>
+        <pre id="output" class="mt-2"></pre>
+        <div>
+            This is a demo, it uses Legacy Bitcoin addresses, which start with a 1 for P2PKH (Pay-to-Public-Key-Hash) addresses. Address Formats in Bitcoin
+        </div>
+
+        <div>
+
+            Paste in this Public key if you just want to test the generator  
+        </div>
+        <div>
+             <b>
+                 0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5b2352
+                </b>
+        </div>
     </div>
 
     <script type="module" src="./index.js"></script>
