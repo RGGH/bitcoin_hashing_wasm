@@ -17,3 +17,13 @@ This is a demo, it uses Legacy Bitcoin addresses, which start with a 1 for P2PKH
         Example: 1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs.
         Encoding: Base58Check encoding.
         Type: P2PKH (Pay-to-Public-Key-Hash).
+
+This code generates a legacy Bitcoin address from a given public key in hexadecimal format. It performs the following steps:
+
+1. **Hex to Bytes**: Converts the input hexadecimal string into a byte array.
+2. **SHA-256 Hashing**: Computes the SHA-256 hash of the public key bytes.
+3. **RIPEMD-160 Hashing**: Hashes the SHA-256 result using the RIPEMD-160 algorithm.
+4. **Version Byte**: Prepends a version byte (0x00) to the RIPEMD-160 hash, indicating it's for the main Bitcoin network.
+5. **Checksum Calculation**: Computes the SHA-256 hash of the versioned hash, then performs SHA-256 again to derive a checksum.
+6. **Checksum Append**: Appends the first four bytes of the checksum to the versioned hash.
+7. **Base58 Encoding**: Converts the final byte array into a Base58 string, resulting in the Bitcoin address.
